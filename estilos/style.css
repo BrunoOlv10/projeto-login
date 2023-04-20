@@ -6,37 +6,65 @@
     Lilás: #5f2c82 
 */
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
-    background-color: #5f2c82;
+    background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    height: 100vh;
+}
+
+.bloco {
+    display: inline-block;
+    margin: auto;
 }
 
 #imagem > img {
-    width: 100px;
-    height: 100px;
+    width: 444px;
+    height: 300px;
+    border-radius: 17px;
 }
 
 #formulario {
     background-color: white;
-    width: 434px;
+    width: 444px;
     height: 300px;
-    margin: auto;
-    border-radius: 13px;
+    border-radius: 17px;
+    padding: 20px 0px 0px 0px;
 }
 
 #formulario > h1 {
-    padding-top: 15px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 #formulario > p {
     padding: 0px 10px;
+    margin-bottom: 20px;
+}
+
+#icon {
+    background-color: #5f2c82;
+    color: white;
+    border-radius: 5px;
+    height: 25px;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div {
+    padding: 0px 5px;
 }
 
 input {
-    width: 370px;
+    width: 380px;
     height: 25px;
     border-radius: 5px;
-    margin: 0px 10px;
+    background-color: #49a09d;
+    border-color: #5f2c82;
 }
 
 #iemail {
@@ -44,10 +72,9 @@ input {
 }
 
 button {
-    margin-top: 5px;
     width: 417px;
     height: 25px;
-    margin: 3px 10px;
+    margin: 10px 10px 3px 10px;
 }
 
 .entrar {
@@ -58,4 +85,5 @@ button {
 .esqueci-senha {
     background-color: white;
     border-color: #49a09d;
+    text-align: center;
 }
