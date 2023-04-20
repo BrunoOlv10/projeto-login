@@ -6,3 +6,56 @@
     Lilás: #5f2c82 
 */
 
+body {
+    background-color: #5f2c82;
+}
+
+#imagem > img {
+    width: 100px;
+    height: 100px;
+}
+
+#formulario {
+    background-color: white;
+    width: 434px;
+    height: 300px;
+    margin: auto;
+    border-radius: 13px;
+}
+
+#formulario > h1 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+#formulario > p {
+    padding: 0px 10px;
+}
+
+input {
+    width: 370px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+#iemail {
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 5px;
+    width: 417px;
+    height: 25px;
+    margin: 3px 10px;
+}
+
+.entrar {
+    background-color: #49a09d;
+    border: 0px;
+}
+
+.esqueci-senha {
+    background-color: white;
+    border-color: #49a09d;
+}

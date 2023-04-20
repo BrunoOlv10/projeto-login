@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-
+                <img src="img/building.jpg" alt="imagem prédio">
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <span class="material-symbols-outlined">person</span>
                 <form action="login.js" method="post">
-                    
+                    <input type="email" name="email" id="iemail"><br>
+                    <input type="password" name="senha" id="isenha"><br>
+                    <button type="submit" class="entrar">Entrar</button>
+                    <button class="esqueci-senha">Esqueci a senha</button>
                 </form>
             </div>
         </section>
