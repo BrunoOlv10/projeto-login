@@ -45,6 +45,7 @@ section#login {
 }
 
 section#login > div#imagem {
+    display: block;
     background: #5f2c82 url(../img/building.jpg) no-repeat;
     background-size: cover;
     background-position: left bottom;
@@ -52,11 +53,11 @@ section#login > div#imagem {
 }
 
 section#login > div#formulario {
-    background-color: white;
+    display: block;
+    padding: 10px;
     width: 444px;
     height: 300px;
     border-radius: 17px;
-    padding: 20px 0px 0px 0px;
 }
 
 #formulario > h1 {
