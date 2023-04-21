@@ -17,17 +17,21 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="login.js" method="post">
+                <form action="login.js" method="post" autocomplete="on">
                     <div class="campo">
-                        <span class="material-icons" id="icon">person</span><input type="email" name="login" id="ilogin" placeholder="seu email" required>
+                        <span class="material-icons" id="icon">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu email" autocomplete="email" required>
                         <label for="ilogin">Login</label>
                     <div>
                     <div class="campo">
-                        <span class="material-icons" id="icon">vpn_key</span><input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8">
+                        <span class="material-icons" id="icon">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8">
                         <label for="isenha">Senha</label>
                     </div>
-                    <button type="submit" class="entrar">Entrar</button>
-                    <button class="esqueci-senha">Esqueci a senha <span class="material-icons" class="icon">mail</span></button>
+                    <input type="submit" class="entrar" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha <span class="material-icons" class="icon">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
