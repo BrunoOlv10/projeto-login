@@ -19,10 +19,10 @@
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
                 <form action="login.js" method="post">
                     <div>
-                        <span class="material-icons" id="icon">person</span><input type="email" name="email" id="iemail" placeholder="seu email">
+                        <span class="material-icons" id="icon">person</span><input type="email" name="email" id="iemail" placeholder="seu email" required>
                     <div>
                     <div>
-                        <span class="material-icons" id="icon">vpn_key</span><input type="password" name="senha" id="isenha" placeholder="sua senha">
+                        <span class="material-icons" id="icon">vpn_key</span><input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8">
                     </div>
                     <button type="submit" class="entrar">Entrar</button>
                     <button class="esqueci-senha">Esqueci a senha <span class="material-icons" class="icon">mail</span></button>
