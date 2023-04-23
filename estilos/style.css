@@ -96,6 +96,10 @@ div.campo > input {
     padding: 4px;
 }
 
+div.campo > input:focus-within {
+    background-color: white;
+}
+
 input[type=submit] {
     display: block;
     font-size: 1em;
