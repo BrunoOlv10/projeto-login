@@ -38,6 +38,7 @@ Grandes telas: acima de 1200px
 
     section#login {
         width: 950px;
+        height: 340px;
     }
 
     section#login > div#imagem {
