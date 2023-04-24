@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+:root {
+    --verde-escuro: #2d6462;
+    --verde: #49a09d;
+    --verde-agua: #6cd3cf;
+    --verde-claro: #94cfcd;
+    --lilas: #5f2c82;
+}
+
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
@@ -8,18 +16,20 @@
 }
 
 body, html {
+    background-color: var(--lilas);
     height: 100vh;
     width: 100vw;
 }
 
 .principal {
-    position: relative;
+
 }
 
 .dados {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     background-color: aqua;
     width: 250px;
