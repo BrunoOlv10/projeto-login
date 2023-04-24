@@ -1,27 +1,15 @@
-// const btn = document.querySelector("#send");
-
-// btn.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const login = document.querySelector("#ilogin");
-//     const value1 = login.value;
-//     document.write("Email: "+value1);
-//     const senha = document.querySelector("#isenha");
-//     const value2 = senha.value;
-//     document.write("Senha: "+value2);
-// })
-
-function index(){
-    window.location='form.html';
-}
-
-function save(){
-    window.localStorage.setItem('login', $('#ilogin').val());
-}
-
-function load(){
-    $('#output').val(window.localStorage.getItem('login'));
-}
-
-function erase(){
-    window.localStorage.removeItem('login');
-}
+(function () {
+    function adicionar() {
+        var dados = JSON.stringify({
+            login   : document.querySelector("input[name=login]").value,
+            senha   : document.querySelector("input[name=senha]").value
+        });
+        // tbClientes.push(dados);
+        localStorage.setItem("storage", JSON.stringify(dados));
+    }
+    var form = document.querySelector("form");
+    form.addEventListener("submit", function () {
+        // event.preventDefault(); event
+        return adicionar();
+    });
+})();

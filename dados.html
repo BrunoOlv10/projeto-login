@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados</title>
 </head>
-<body onload="load()" onunload="erase()">
+<body>
     <h1>Dados Login</h1>
-    <label for="html">Email: </label><input id="output" name="output">
+    <script>
+        //Pega o registro STORAGE no localstorage.
+        var registro = localStorage.getItem("storage");
+
+        var parse = JSON.parse(registro);
+        var obj = JSON.parse(parse);
+        
+        document.write("Seu email: "+obj.login+"<br>");
+        document.write("Sua senha: "+obj.senha);
+    </script>
 </body>
 </html>
