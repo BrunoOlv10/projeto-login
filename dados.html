@@ -9,13 +9,28 @@
 </head>
 <body>
     <h1>Dados Login</h1>
+
+    <div class="dados">
+
+    <h3>Seu email:</h2> 
+    <p id="email"></p>
+
+    <h3>Sua senha:</h3>
+    <p id="senha"></p>
+
+    </div>
+
         <script>
             var registro = localStorage.getItem("storage");
             var parse = JSON.parse(registro);
             var obj = JSON.parse(parse);
-        
-            document.write("Seu email: "+obj.login+"<br>");
-            document.write("Sua senha: "+obj.senha);
+            
+            let email = document.getElementById('email');
+            email.innerHTML = obj.login;
+            let senha = document.getElementById('senha')
+            senha.innerText = obj.senha;
         </script>
+
+    
 </body>
 </html>
