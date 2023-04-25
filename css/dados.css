@@ -1,11 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --verde-escuro: #2d6462;
-    --verde: #49a09d;
-    --verde-agua: #6cd3cf;
-    --verde-claro: #94cfcd;
     --lilas: #5f2c82;
+    --lilas-claro: rgb(120, 139, 194);
 }
 
 * {
@@ -25,25 +22,45 @@ section {
     padding: 10px;
 }
 
-.campo {
-    margin: 15px 0px;
-}
-
-.campo > i {
-    font-size: 2em;
-    width: 40px;
-    padding: 2px 5px;
-}
-
 .dados {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: rgb(120, 139, 194);
+    background-color: var(--lilas-claro);
     width: 250px;
-    height: 215px;
+    height: 200px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+}
+
+h1 {
+    padding: 5px 0px;
+}
+
+
+.dados-in {
+    transform: translateY(-141%);
+    position: relative;
+    margin: auto;
+}
+
+#iemail, #isenha {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    transform: translate(-69px, 30.2px);
+}
+
+#iemail {
+    padding: 2px 9px;
+}
+
+#isenha {
+    padding: 2px 5px;
+}
+
+h3 {
+    text-align: center;
 }
