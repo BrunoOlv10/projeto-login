@@ -5,6 +5,4 @@
         });
         localStorage.setItem("storage", JSON.stringify(dados));
         window.location.replace('dados.html');
-        // ou
-        // window.location.href = 'dados.html';
     };

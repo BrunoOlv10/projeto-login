@@ -39,9 +39,14 @@ h1 {
     padding: 5px 0px;
 }
 
+.campo1, .campo2 {
+    padding-bottom: 12px;
+}
 
 .dados-in {
-    transform: translateY(-141%);
+    top: -50%;
+    height: 50px;
+    transform: translateY(-48%);
     position: relative;
     margin: auto;
 }
