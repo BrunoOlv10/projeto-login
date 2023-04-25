@@ -21,6 +21,10 @@ body, html {
     width: 100vw;
 }
 
+section {
+    padding: 10px;
+}
+
 .campo {
     margin: 15px 0px;
 }
