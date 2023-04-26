@@ -81,10 +81,14 @@ Grandes telas: acima de 1200px
     }
 
     .dados > h1 {
-        margin-bottom: 25px;
+        margin-bottom: 0px;
     }
 
     .space-email, .space-senha {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
+    }
+
+    a {
+        margin-bottom: 5px;
     }
 }

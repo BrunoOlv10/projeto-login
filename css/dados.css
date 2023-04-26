@@ -44,7 +44,7 @@ main {
 }
 
 h1 {
-    margin-bottom: -5px;
+    margin-bottom: -15px;
 }
 
 .dados-in {
@@ -55,10 +55,8 @@ h1 {
 }
 
 .space-email, .space-senha{
-    margin: 0px auto;
     transform: translateY(5px);
     border-radius: 8px;
-    width: 230px;
 }
 
 span {
@@ -75,8 +73,4 @@ span {
 
 h3 {
     text-align: center;
-}
-
-a {
-    margin-bottom: 5px;
 }
