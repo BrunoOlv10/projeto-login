@@ -41,15 +41,15 @@ Grandes telas: acima de 1200px
 
     section.dados {
         width: 350px;
-        height: 250px;
+        height: 225px;
     }
 
     .dados > h1 {
-        margin-bottom: 45px;
+        margin-bottom: 25px;
     }
 
     .space-email, .space-senha {
-        transform: translateY(-30px);
+        transform: translateY(-15px);
     }
 }
 
@@ -84,7 +84,19 @@ Grandes telas: acima de 1200px
     }
 
     section.dados {
+        /* width: 350px;
+        height: 225px; */
+
+
         width: 400px;
-        height: 300px;
+        height: 240px;
+    }
+
+    .dados > h1 {
+        margin-bottom: 25px;
+    }
+
+    .space-email, .space-senha {
+        transform: translateY(-15px);
     }
 }
