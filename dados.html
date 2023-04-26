@@ -15,15 +15,19 @@
             <h1>Dados Login</h1>
             <div class="campo1">
                 <div class="dados-in">
-                    <i class="material-icons" id="iemail">person</i>
-                        <h3>Seu email:</h2>
+                        <span>
+                            <i class="material-icons" id="iemail">person</i> 
+                            <h3>Seu email:</h2> 
+                        </span>
                         <p id="email"></p>
                 </div>
             </div>
             <div class="campo2">
                 <div class="dados-in">
-                    <i class="material-icons" id="isenha">vpn_key</i>
-                        <h3>Sua senha:</h3>
+                        <span>
+                            <i class="material-icons" id="isenha">vpn_key</i>
+                            <h3>Sua senha:</h3>
+                        </span>
                         <p id="senha"></p>
                 </div>
             </div>
@@ -32,6 +36,7 @@
                 var registro = localStorage.getItem("storage");
                 var parse = JSON.parse(registro);
                 var obj = JSON.parse(parse);
+        
                 let email = document.getElementById('email');
                 email.innerHTML = obj.login;
                 let senha = document.getElementById('senha')
