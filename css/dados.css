@@ -3,7 +3,9 @@
 :root {
     --lilas: #5f2c82;
     --lilas-claro: rgb(120, 139, 194);
+    --verde-escuro: #2d6462;
     --verde: #49a09d;
+    --verde-agua: #6cd3cf;
 }
 
 * {
@@ -69,6 +71,22 @@ span {
     color: white;
     font-size: 2em;
     width: 40px;
+}
+
+button {
+    margin: 0px auto;
+    background-color: var(--verde-agua);
+    border: var(--verde) 2px solid;
+    width: 160px;
+}
+
+button:hover {
+    background-color: var(--verde-escuro);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 h3 {
