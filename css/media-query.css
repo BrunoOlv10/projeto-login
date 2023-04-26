@@ -38,6 +38,11 @@ Grandes telas: acima de 1200px
     div#formulario > p {
         margin: 10px 0px;
     }
+
+    section.dados {
+        width: 350px;
+        height: 250px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -68,5 +73,10 @@ Grandes telas: acima de 1200px
     div#formulario > p {
         font-size: 0.9em;
         margin: 10px 0px;
+    }
+
+    section.dados {
+        width: 400px;
+        height: 300px;
     }
 }
