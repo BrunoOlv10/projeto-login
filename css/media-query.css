@@ -43,14 +43,6 @@ Grandes telas: acima de 1200px
         width: 350px;
         height: 225px;
     }
-
-    .dados > h1 {
-        margin-bottom: 15px;
-    }
-
-    .space-email, .space-senha {
-        transform: translateY(-10px);
-    }
 }
 
 @media screen and (min-width: 992px) {
@@ -84,10 +76,6 @@ Grandes telas: acima de 1200px
     }
 
     section.dados {
-        /* width: 350px;
-        height: 225px; */
-
-
         width: 400px;
         height: 240px;
     }
