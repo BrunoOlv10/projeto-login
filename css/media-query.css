@@ -43,6 +43,14 @@ Grandes telas: acima de 1200px
         width: 350px;
         height: 250px;
     }
+
+    .dados > h1 {
+        margin-bottom: 45px;
+    }
+
+    .space-email, .space-senha {
+        transform: translateY(-30px);
+    }
 }
 
 @media screen and (min-width: 992px) {

@@ -42,7 +42,7 @@ main {
 }
 
 h1 {
-    margin-bottom: 45px;
+    margin-bottom: -4px;
 }
 
 .dados-in {
@@ -53,8 +53,8 @@ h1 {
     gap: 5px;
 }
 
-.space-email {
-    margin-bottom: 10px;
+.space-email, .space-senha{
+    transform: translateY(0px);
 }
 
 span {
