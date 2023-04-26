@@ -31,7 +31,6 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 10px;
     gap: 15px;
     background-color: var(--lilas-claro);
     width: 300px;
@@ -42,6 +41,10 @@ main {
     transition-timing-function: ease;
 }
 
+h1 {
+    margin-bottom: 45px;
+}
+
 .dados-in {
     display: flex;
     flex-direction: column;
@@ -50,18 +53,17 @@ main {
     gap: 5px;
 }
 
+.space-email {
+    margin-bottom: 10px;
+}
+
 span {
     display: flex;
     align-items: center;
 }
 
-h1 {
-    position: static;
-    top: -100%;
-}
 
-
-#iemail, #isenha {
+#email, #senha {
     color: white;
     font-size: 2em;
     width: 40px;

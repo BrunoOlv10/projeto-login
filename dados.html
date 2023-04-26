@@ -13,33 +13,29 @@
     <main>
         <section class="dados">
             <h1>Dados Login</h1>
-            <div class="campo1">
-                <div class="dados-in">
+                <div class="dados-in space-email">
                         <span>
-                            <i class="material-icons" id="iemail">person</i> 
+                            <i class="material-icons" id="email">person</i> 
                             <h3>Seu email:</h2> 
                         </span>
-                        <p id="email"></p>
+                        <p id="dado-email"></p>
                 </div>
-            </div>
-            <div class="campo2">
-                <div class="dados-in">
+                <div class="dados-in space-senha">
                         <span>
-                            <i class="material-icons" id="isenha">vpn_key</i>
+                            <i class="material-icons" id="senha">vpn_key</i>
                             <h3>Sua senha:</h3>
                         </span>
-                        <p id="senha"></p>
+                        <p id="dado-senha"></p>
                 </div>
-            </div>
         </section>
             <script>
                 var registro = localStorage.getItem("storage");
                 var parse = JSON.parse(registro);
                 var obj = JSON.parse(parse);
         
-                let email = document.getElementById('email');
+                let email = document.getElementById('dado-email');
                 email.innerHTML = obj.login;
-                let senha = document.getElementById('senha')
+                let senha = document.getElementById('dado-senha')
                 senha.innerText = obj.senha;
             </script>
     </main>
