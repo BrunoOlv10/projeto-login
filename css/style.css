@@ -104,7 +104,7 @@ div.campo > input:focus-within {
     background-color: white;
 }
 
-#send {
+.send {
     display: block;
     margin: 5px 0px;
     text-align: center;
@@ -118,7 +118,7 @@ div.campo > input:focus-within {
     cursor: pointer;
 }
 
-#send:hover {
+.send:hover {
     background-color: var(--verde-escuro);
 }
 

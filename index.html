@@ -26,8 +26,8 @@
                         <i class="material-icons">vpn_key</i>
                         <input type="password" name="senha" id="senha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20"><label for="isenha">Senha</label>
                     </div>
-                    <input onclick="adicionar()" onclick="login()" id="send" value="Entrar">
-                    <input onclick="cadastrar()" id="send" value="Cadastrar-se">
+                    <input onclick="adicionar()" id="logar" class="send" value="Entrar">
+                    <button id="cadastrar" class="send">Cadastrar-se</button>
                     <a href="esqueci.html" class="botao">Esqueci a senha <i class="material-icons" id="mail">mail</i></a>
                 </form>
             </div>
@@ -35,7 +35,44 @@
     </main>
 </body>
 <script src="js/index.js" defer></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+        apiKey: "AIzaSyBvKQO59l_CAuZil1GOry0UVfvkNwsQscQ",
+        authDomain: "tela-login-19bad.firebaseapp.com",
+        projectId: "tela-login-19bad",
+        storageBucket: "tela-login-19bad.appspot.com",
+        messagingSenderId: "472437703349",
+        appId: "1:472437703349:web:ff620e61c7b47df73374fc"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById('cadastrar').addEventListener('click', function(){
+            const email = document.getElementById('login').value 
+            const password = document.getElementById('senha').value 
+
+            createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in
+                const user = userCredential.user;
+                // ...
+                console.log("Cadastro realizado com sucesso!")
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+                console.log("Dados inválidos!")
+            });
+        })
+  </script>
 </html>
