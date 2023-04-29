@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-query.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="js/index.js" defer></script>
 </head>
 <body>
     <main>
@@ -34,4 +33,18 @@
         </section>
     </main>
 </body>
+<script src="js/index.js" defer></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
+<script>
+     const firebaseConfig = {
+        apiKey: "AIzaSyBvKQO59l_CAuZil1GOry0UVfvkNwsQscQ",
+        authDomain: "tela-login-19bad.firebaseapp.com",
+        projectId: "tela-login-19bad",
+        storageBucket: "tela-login-19bad.appspot.com",
+        messagingSenderId: "472437703349",
+        appId: "1:472437703349:web:ff620e61c7b47df73374fc"
+    };
+    firebase.initializeApp(firebaseConfig);
+</script>
 </html>
