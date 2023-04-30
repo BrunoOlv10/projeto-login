@@ -26,7 +26,7 @@
                         <i class="material-icons">vpn_key</i>
                         <input type="password" name="senha" id="senha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20"><label for="isenha">Senha</label>
                     </div>
-                    <input onclick="adicionar()" id="logar" class="send" value="Entrar">
+                    <input onclick="adicionar()" onclick="login()" id="logar" class="send" value="Entrar">
                     <button id="cadastrar" class="send">Cadastrar-se</button>
                     <a href="esqueci.html" class="botao">Esqueci a senha <i class="material-icons" id="mail">mail</i></a>
                 </form>
@@ -47,14 +47,6 @@
         appId: "1:472437703349:web:ff620e61c7b47df73374fc"
         };
         firebase.initializeApp(firebaseConfig);
-
-        console.log('antes')
-        firebase.auth().signInWithEmailAndPassword("bruno.olvslv@gmail.com", "senha123").then(response => {
-            console.log('success', response)
-        }).catch(error => {
-            console.log('error', error)
-        });
-        console.log('depois')
 
 
         // Initialize Firebase
