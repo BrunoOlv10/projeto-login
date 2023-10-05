@@ -7,6 +7,16 @@
         window.location.replace('dados.html');
     };
 
+    (form.senha().value)
+    if(form.senha().value.length < 7 || form.senha().value.length > 20) {
+    alert("Quantidade de caracteres incorreta")
+    return
+    }
+
+    function register(login, senha) {
+        return firebase.auth().createUserWithEmailAndPassword(login, senha);
+    }
+
     function login() {
         firebase.auth().signInWithEmailAndPassword(
             form.email().value, form.senha().value
