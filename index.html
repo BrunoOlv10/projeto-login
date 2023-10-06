@@ -20,56 +20,22 @@
                 <form name="form" id="form" autocomplete="on">
                     <div class="campo">
                         <i class="material-icons">person</i>
-                        <input type="email" name="login" id="login" placeholder="Email" autocomplete="email" required maxlength="50"><label for="ilogin">Login</label>
+                        <input type="email" name="email" id="email" placeholder="Email" autocomplete="email" required><label for="ilogin">Login</label>
                     </div>
                     <div class="campo">
                         <i class="material-icons">vpn_key</i>
-                        <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="20"><label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" autocomplete="current-password" required><label for="isenha">Senha</label>
                     </div>
-                    <input onclick="adicionar()" onclick="login()" id="logar" class="send" value="Entrar">
-                    <button id="cadastrar" class="send">Cadastrar-se</button>
+                    <button type="button" id="logar" class="send">Entrar</button>
+                    <button type="button" id="cadastrar" class="send">Cadastrar-se</button>
                     <a href="esqueci.html" class="botao">Esqueci a senha <i class="material-icons" id="mail">mail</i></a>
                 </form>
             </div>
         </section>
     </main>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/index.js" defer></script>
 </body>
-<script src="js/index.js" defer></script>
-<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-auth-compat.js"></script>
-    <script>
-        const firebaseConfig = {
-        apiKey: "AIzaSyBvKQO59l_CAuZil1GOry0UVfvkNwsQscQ",
-        authDomain: "tela-login-19bad.firebaseapp.com",
-        projectId: "tela-login-19bad",
-        storageBucket: "tela-login-19bad.appspot.com",
-        messagingSenderId: "472437703349",
-        appId: "1:472437703349:web:ff620e61c7b47df73374fc"
-        };
-        firebase.initializeApp(firebaseConfig);
-
-
-        // Initialize Firebase
-        // const app = initializeApp(firebaseConfig);
-        // const auth = getAuth(app);
-
-        // document.getElementById('cadastrar').addEventListener('click', function(){
-        //     const email = document.getElementById('login').value 
-        //     const password = document.getElementById('senha').value 
-
-        //     createUserWithEmailAndPassword(auth, email, password)
-        //     .then((userCredential) => {
-        //         // Signed in
-        //         const user = userCredential.user;
-        //         // ...
-        //         console.log("Cadastro realizado com sucesso!")
-        //     })
-        //     .catch((error) => {
-        //         const errorCode = error.code;
-        //         const errorMessage = error.message;
-        //         // ..
-        //         console.log("Dados inválidos!")
-        //     });
-        // })
-    </script>
 </html>
