@@ -29,16 +29,17 @@ main {
     place-items: center;
 }
 
-.dados {
+section.dados {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     gap: 15px;
+    padding: 10px;
     background-color: var(--lilas-claro);
     border: var(--verde) 1px solid;
     width: 300px;
-    height: 200px;
+    height: 275px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
     transition: width 0.3s, height 0.3s;
@@ -74,10 +75,15 @@ span {
 }
 
 button {
-    margin: 0px auto;
-    background-color: var(--verde-agua);
-    border: var(--verde) 2px solid;
-    width: 160px;
+    text-align: center;
+    background-color: var(--verde);
+    border: none;
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 button:hover {
@@ -86,7 +92,7 @@ button:hover {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 h3 {

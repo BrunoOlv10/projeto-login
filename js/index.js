@@ -33,7 +33,7 @@ document.getElementById("logar").addEventListener("click", function() {
     firebase.auth().signInWithEmailAndPassword(email, senha)
     .then(() => {
         adicionarLocalmente()
-        alert("Logado com sucesso")
+        alert("Logado com sucesso!")
         window.location.href = "dados.html"
     })
     .catch((error) => {
@@ -49,7 +49,7 @@ document.getElementById("cadastrar").addEventListener("click", function() {
 
     if(!form.checkValidity()) return;
     if(senha.length < 7 || senha.length > 20) {
-        alert("Quantidade de caracteres incorreta! Crie uma senha entre 7 a 20 caracteres")
+        alert("Quantidade de caracteres incorreta! Crie uma senha entre 7 a 20 caracteres.")
         return
     }
 
