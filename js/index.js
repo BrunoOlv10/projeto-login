@@ -20,6 +20,12 @@
         if(error.code == "auth/wrong-password") {
             return "Senha incorreta!";
         }
+        if(error.code == "auth/user-not-found") {
+            return "Erro: Nenhum usuário encontrado com este email";
+        }
+        if(error.code == "auth/missing-email") {
+            return "Erro: Digite seu email";
+        }
         return error.message;
     }
 
@@ -62,3 +68,15 @@ document.getElementById("cadastrar").addEventListener("click", function() {
     })
     
 });
+
+function redefinirSenha() {
+    const email = document.getElementById("email").value;
+    
+    firebase.auth().sendPasswordResetEmail(email)
+        .then(() => {
+            alert("Email de redefinição de senha enviado!")
+        })
+        .catch((error) => {
+            alert(getErrorMessage(error));
+        })
+}

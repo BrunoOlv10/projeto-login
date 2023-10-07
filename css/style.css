@@ -134,6 +134,7 @@ a.botao {
     border: 1px solid var(--verde);
     border-radius: 7px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a.botao:hover {
